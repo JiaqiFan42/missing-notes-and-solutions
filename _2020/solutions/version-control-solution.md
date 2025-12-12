@@ -179,7 +179,8 @@ index: 6
     ```
 6. 您可以通过执行 git config --global core.excludesfile ~/.gitignore_global 在 ~/.gitignore_global 中创建全局忽略规则。配置您的全局 gitignore 文件来自动忽略系统或编辑器的临时文件，例如 .DS_Store；
     ```bash
-    git config --global core.excludesfile ~/.gitignore .DS_Store
+    git config --global core.excludesfile ~/.gitignore
+    echo .DS_Store >> ~/.gitignore
     ```
 7. 克隆 本课程网站的仓库，找找有没有错别字或其他可以改进的地方，在 GitHub 上发起拉取请求（Pull Request）；
    首先 fork 本网站仓库，然后克隆 fork 后的仓库
